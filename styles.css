@@ -1,6 +1,71 @@
 body
 {
-  background-color: #00FF00;
+  background-color: green;
+  color: magenta;
   text-align: center;
   font-size: 100px;
+  font-family: "Comic Sans MS";
+}
+
+#container
+{
+	position: relative;
+	height: 200px;
+	width: 200px;
+	margin: auto;
+	perspective: 500px;
+	perspective-origin: center;
+}
+
+@keyframes spin
+{
+	from
+	{
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+	to
+	{
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}
+
+#buche
+{
+	position: relative;
+	margin: 250px auto;
+	transform-style: preserve-3d;
+	animation: spin 30s infinite linear;
+}
+
+#buche1
+{
+	position: absolute;
+	width: 200px;
+	height: 300px;
+	background-image: url(buche1.jpg);
+	background-size: 200px 300px;
+	background-repeat: no-repeat;
+	transform: translateY(-150px) translateZ(87px);
+}
+
+#buche2
+{
+	position: absolute;
+	width: 200px;
+	height: 300px;
+	background-image: url(buche2.jpg);
+	background-size: 200px 300px;
+	background-repeat: no-repeat;
+	transform: translateY(-150px) translateX(-50px) rotateY(60deg);
+}
+
+#buche3
+{
+	position: absolute;
+	width: 200px;
+	height: 300px;
+	background-image: url(buche3.jpg);
+	background-size: 200px 300px;
+	background-repeat: no-repeat;
+	transform: translateY(-150px) translateX(50px) rotateY(120deg);
 }
