@@ -132,3 +132,25 @@ h2
 	font-family: "Comic Sans MS";
 	transform: translateY(-150px) translateX(200px);
 }
+
+.prod
+{
+	position: relative;
+	color: black;
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial;
+	border: outset;
+}
+
+#doonut
+{
+	bottom: 100px;
+	background-color: grey;
+}
+
+#peintre
+{
+	bottom: 50px;
+	background-color: red;
+}
